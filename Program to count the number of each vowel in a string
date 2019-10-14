@@ -17,3 +17,5 @@ for char in inp_str:
        count[char] += 1
 
 print(count)
+
+#Dinesh: https://github.com/dseera6
