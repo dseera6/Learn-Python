@@ -1,0 +1,19 @@
+# Program to count the number of each vowel in a string
+
+vowels = 'aeiou'
+
+# uncomment to take input from the user
+inp_str = input("Enter a string: ")
+
+# make it suitable for caseless comparisions. The casefold() method is an aggressive lower() method which convert strings to casefolded strings for caseless matching. The casefold() method is removes all case distinctions present in a string. It is used for caseless matching, i.e. ignores cases when comparing.
+inp_str = ip_str.casefold()
+
+# make a dictionary with each vowel a key and value 0
+count = {}.fromkeys(vowels,0)
+
+# loop to count the vowels
+for char in inp_str:
+   if char in count:
+       count[char] += 1
+
+print(count)
